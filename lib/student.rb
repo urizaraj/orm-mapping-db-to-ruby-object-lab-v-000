@@ -52,4 +52,8 @@ class Student
   def self.count_all_students_in_grade_9
     self.all.find_all { |student| student.grade == "9" }
   end
+
+  def self.students_below_12th_grade
+    self.all.find_all { |student| student.grade.to_i < 12 }
+  end
 end
