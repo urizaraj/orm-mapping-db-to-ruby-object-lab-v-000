@@ -19,7 +19,7 @@ class Student
     WHERE name = ?
     SQL
 
-    row = DB[:conn].execute(sql, name)
+    row = DB[:conn].execute(sql, name).first
     new_from_db(row)
   end
 
