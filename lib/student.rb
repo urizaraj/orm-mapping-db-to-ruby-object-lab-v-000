@@ -5,6 +5,8 @@ class Student
     student = new
 
     student.id, student.name, student.grade = row
+
+    student
   end
 
   def self.all
