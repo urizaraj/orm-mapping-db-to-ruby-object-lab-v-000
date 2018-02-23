@@ -57,7 +57,7 @@ class Student
     self.all.find_all { |student| student.grade.to_i < 12 }
   end
 
-  def self.first_X_students_in_grade_10
-    self.all.find_all { |student| student.grade == "10" }[0..9]
+  def self.first_X_students_in_grade_10(X)
+    self.all.find_all { |student| student.grade == "10" }[0..X]
   end
 end
