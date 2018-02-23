@@ -50,6 +50,6 @@ class Student
   end
 
   def self.count_all_students_in_grade_9
-    self.all.find_all { |student| student.grade == 9 }
+    self.all.find_all { |student| student.grade == "9" }
   end
 end
