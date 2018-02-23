@@ -12,7 +12,7 @@ class Student
     # remember each row should be a new instance of the Student class
     rows = DB[:conn].execute('SELECT * FROM students')
 
-    rows.map { |row| Student.new_from_db(row) }
+    rows.map { |row| self.new_from_db(row) }
   end
 
   def self.find_by_name(name)
