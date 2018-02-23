@@ -9,7 +9,6 @@ class Student
 
   def self.all
     rows = DB[:conn].execute('SELECT * FROM students')
-
     rows.map { |row| self.new_from_db(row) }
   end
 
