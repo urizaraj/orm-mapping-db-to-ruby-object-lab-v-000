@@ -63,6 +63,6 @@ class Student
   end
 
   def first_student_in_grade_10
-    self.all.find { |student| student.grade == "9" }
+    self.all.find { |student| student.grade == "10" }
   end
 end
