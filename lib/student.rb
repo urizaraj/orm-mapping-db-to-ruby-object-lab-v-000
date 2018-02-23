@@ -3,9 +3,7 @@ class Student
 
   def self.new_from_db(row)
     student = new
-
     student.id, student.name, student.grade = row
-
     student
   end
 
