@@ -56,4 +56,8 @@ class Student
   def self.students_below_12th_grade
     self.all.find_all { |student| student.grade.to_i < 12 }
   end
+
+  def self.first_X_students_in_grade_10
+    self.all.find_all { |student| student.grade == "9" }[0..9]
+  end
 end
